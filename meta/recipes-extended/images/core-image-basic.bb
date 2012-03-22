@@ -6,6 +6,7 @@ IMAGE_FEATURES += "apps-console-core ssh-server-openssh"
 IMAGE_INSTALL = "\
     task-core-boot \
     task-core-basic \
+    ${ROOTFS_PKGMANAGE} \
     "
 
 #    ${CORE_IMAGE_BASE_INSTALL} 

@@ -81,9 +81,9 @@ do_install() {
 	     > ${D}${sysconfdir}/default/volatiles/99_dbus
 
 
-	mkdir -p ${D}${localstatedir}/run/dbus ${D}${localstatedir}/lib/dbus
+	mkdir -p ${D}${localstatedir}/volatile/run/dbus ${D}${localstatedir}/volatile/lib/dbus
 
-	chown messagebus:messagebus ${D}${localstatedir}/run/dbus ${D}${localstatedir}/lib/dbus
+	chown messagebus:messagebus ${D}${localstatedir}/volatile/run/dbus ${D}${localstatedir}/volatile/lib/dbus
 
 	chown root:messagebus ${D}${libexecdir}/dbus-daemon-launch-helper
 	chmod 4755 ${D}${libexecdir}/dbus-daemon-launch-helper
